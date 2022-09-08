@@ -43,6 +43,26 @@ public class SiAssignment1Application {
         return xml.split("<"+tagName+">")[1].split("</"+tagName+">")[0];
     }
 
+    public static void GeoIpFunction(String IPAddress, String name) throws ParseException {
+        GeoIPServiceLocator cipL = new GeoIPServiceLocator();
+        RestFetching rf = new RestFetching();
+        try {
+            String xmlResult = cipL.getGeoIPServiceSoap().getIpLocation(IPAddress);
+            String country = getTagValue(xmlResult, "Country");
+            //System.out.println(country);
+            try {
+                System.out.println(rf.fetching(name, country));
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+        } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        } catch (ServiceException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
 
 
