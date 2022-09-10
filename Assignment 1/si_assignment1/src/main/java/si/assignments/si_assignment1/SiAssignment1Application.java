@@ -42,7 +42,6 @@ public class SiAssignment1Application {
     public static String getTagValue(String xml, String tagName){
         return xml.split("<"+tagName+">")[1].split("</"+tagName+">")[0];
     }
-
     public static void GeoIpFunction(String IPAddress, String name) throws ParseException {
         GeoIPServiceLocator cipL = new GeoIPServiceLocator();
         RestFetching rf = new RestFetching();
