@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class RestFetching {
 
-    public static String fetching(String name, String country) throws IOException, ParseException {
+    public static String GetGenderByNameAndCountry(String name, String country) throws IOException, ParseException {
 
         URL url = new URL("https://api.genderize.io/?name=" + name + "&country_id=" + country);
 
