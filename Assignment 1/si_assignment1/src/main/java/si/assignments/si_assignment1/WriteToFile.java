@@ -4,27 +4,17 @@ import com.thedeanda.lorem.LoremIpsum;
 import java.io.File;  // Import the File class
 import java.io.FileWriter;   // Import the FileWriter class
 import java.io.IOException;  // Import the IOException class to handle errors
+import java.util.Objects;
+
 import org.apache.commons.io.FileUtils;
 
 public class WriteToFile {
 
-//        public static void CreateFolder(String path) {
-//        try {
-//            File myObj = new File(path);
-//            if (myObj.createNewFile()) {
-//                System.out.println("Folder created: " + myObj.getName());
-//            } else {
-//                System.out.println("Folder already exists.");
-//            }
-//        } catch (IOException e) {
-//            System.out.println("An error occurred.");
-//            e.printStackTrace();
-//            }
-//        }
-
         public static void CreateFile(String name, String path) {
+            String filePath = path + "\\InviteFor" + name + ".txt";
+            System.out.println(filePath);
             try {
-                File myObj = new File(path + "\\InviteFor" + name + ".txt");
+                File myObj = new File(filePath);
                 if (myObj.createNewFile()) {
                     System.out.println("File created: " + myObj.getName());
                 } else {
@@ -51,9 +41,21 @@ public class WriteToFile {
         }
 
         public static void CleanFolder(String pathName) throws IOException {
-            File directory = new File(pathName);
-            FileUtils.cleanDirectory(directory);
+            File file = new File(pathName);
+            FileUtils.deleteDirectory(file);
         }
+
+
+        public static void CreateFolder(String path) {
+            File myObj = new File(path);
+            if (myObj.mkdirs()) {
+                System.out.println("Folder created: " + myObj.getName());
+            } else {
+                System.out.println("Folder already exists.");
+            }
+
+        }
+
 
 
     }
