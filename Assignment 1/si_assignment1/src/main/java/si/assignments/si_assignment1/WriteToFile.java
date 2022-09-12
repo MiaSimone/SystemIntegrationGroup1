@@ -36,7 +36,7 @@ public class WriteToFile {
                             "The event will be held at the Cox Student Center at Northern State University and will last about two to three hours. \n" +
                             "If you have an interest in attending or sending a company representative to meet with our students, please let me know \n" +
                             "at your earliest convenience and I can reserve a table for you.\n\n" +
-                            "Thank for your time and I hope to hear from you soon.\n\nRespectfully,\nLucy the Cat";
+                            "Thank you for your time and I hope to hear from you soon.\n\nRespectfully,\nLucy the Cat";
 
             try {
                 FileWriter myWriter = new FileWriter(path + "\\InviteFor" + name + ".txt");
