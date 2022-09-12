@@ -32,7 +32,7 @@ public class SiAssignment1Application {
 
         RestFetching rf = new RestFetching();
 //        String pathName = "si_assignment1\\Invitations";
-        String pathName = "C:\\Users\\miade\\IdeaProjects\\System Integration GitHub Assignments\\SystemIntegrationGroup1\\Assignment 1\\si_assignment1\\Invitations";
+        String pathName = "SystemIntegrationGroup1\\Assignment 1\\si_assignment1\\Invitations";
 
 
         WriteToFile.CleanFolder(pathName);
