@@ -1,4 +1,4 @@
-How to run the project:
+# How to run the project:
 
 1. Download the ZIP 'Camunda Platform 7 Run' (Community Edition) via https://camunda.com/download/
 2. Download the ZIP 'Camunda Desktop Modeler' via https://camunda.com/download/modeler/
