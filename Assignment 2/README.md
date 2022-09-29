@@ -15,6 +15,6 @@ The arbitrary business has a system that is able to handle customer complaints o
 
 #### Authors:
 
-Mia
-Kenneth
-Malthe
+- Mia
+- Kenneth
+- Malthe
