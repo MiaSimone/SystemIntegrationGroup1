@@ -1,0 +1,37 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "Management",
+          "value": "management"
+        },
+        {
+          "label": "Cashier",
+          "value": "cashier"
+        },
+        {
+          "label": "Product",
+          "value": "product"
+        }
+      ],
+      "label": "Select Complain Topic",
+      "type": "select",
+      "id": "Field_1o6l12o",
+      "key": "complaintTopicForm",
+      "description": "What you would like to make a complaint about",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_1b4e036",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.3.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}

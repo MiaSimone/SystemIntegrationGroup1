@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="decideReplyText" name="Decide Reply Text" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.3.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.17.0">
+  <decision id="decide-reply-text" name="Decide Reply Text">
+    <decisionTable id="DecisionTable_06h4v7i">
+      <input id="Input_1" label="Complaint Topic">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>complaintTopic</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0rm1pbe">
+          <text>"management","cashier","product"</text>
+        </inputValues>
+      </input>
+      <output id="output123" label="Reply" name="reply" typeRef="integer" />
+      <rule id="DecisionRule_0rzux14">
+        <inputEntry id="UnaryTests_033wyhb">
+          <text>"management"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ltt0yy">
+          <text>1</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11n2xt4">
+        <inputEntry id="UnaryTests_1gqqp9w">
+          <text>"cashier"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0p1os7g">
+          <text>2</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ivgff8">
+        <inputEntry id="UnaryTests_0po6ksd">
+          <text>"product"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1231f3z">
+          <text>3</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="decide-reply-text">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
