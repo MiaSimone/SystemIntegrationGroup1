@@ -1,8 +1,8 @@
 package com.example.demo.service;
 
-import dk.dd.newgrpctest.gen.HelloRequest;
-import dk.dd.newgrpctest.gen.HelloResponse;
-import dk.dd.newgrpctest.gen.HelloServiceGrpc;
+import com.example.demo.grpc.HelloRequest;
+import com.example.demo.grpc.HelloResponse;
+import com.example.demo.grpc.HelloServiceGrpc;
 import io.grpc.stub.StreamObserver;
 
 public class HelloService extends HelloServiceGrpc.HelloServiceImplBase

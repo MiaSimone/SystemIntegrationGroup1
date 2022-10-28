@@ -2,7 +2,7 @@
 // proto version
 syntax = "proto3";
 //  package for the generated code
-package dk.dd.newgrpctest.gen;
+package com.example.demo.grpc;
 //  generate separate files for each service
 option java_multiple_files = true;
 
