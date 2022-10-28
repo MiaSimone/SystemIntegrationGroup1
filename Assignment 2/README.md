@@ -1,4 +1,8 @@
-# How to run the project:
+## Business scenario
+
+The arbitrary business has a system that is able to handle customer complaints on different topics and send a response email accordingly.
+
+## How to run the project:
 
 1. Download the ZIP 'Camunda Platform 7 Run' (Community Edition) via https://camunda.com/download/
 2. Download the ZIP 'Camunda Desktop Modeler' via https://camunda.com/download/modeler/
@@ -8,3 +12,9 @@
 6. Start the process in the tasklist on Camunda Platform and fill out the input fields.
 7. After selecting a complain topic and entering your email address, hit the red 'Complete' button.
 8. Now the project should respond with a success in the terminal and you should receive a confirmation mail from dummydum0101@outlook.com to the specified email address you entered in step 7!
+
+#### Authors:
+
+- Mia
+- Kenneth
+- Malthe
