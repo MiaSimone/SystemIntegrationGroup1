@@ -1,0 +1,38 @@
+// Language specific
+// proto version
+syntax = "proto3";
+//  package for the generated code
+package com.example.demo.grpc;
+//  generate separate files for each service
+option java_multiple_files = true;
+
+//enum Student
+//{
+//  NAME = 0;
+//  MAIL = 1;
+//  BALANCE = 2;
+//}
+//enum Book
+//{
+//  TITLE = 0;
+//  PRICE = 1;
+//}
+
+message BuyBookRequest
+{
+//  Student student = 1;
+//  Book book = 2;
+  string studentId = 1;
+  string bookId = 2;
+}
+
+message BuyBookResponse
+{
+  string result = 1;
+}
+
+// Define service contract
+service BuyBookService
+{
+  rpc BuyBook(BuyBookRequest) returns (BuyBookResponse);
+}

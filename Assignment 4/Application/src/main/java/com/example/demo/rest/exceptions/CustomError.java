@@ -1,4 +1,4 @@
-package com.example.demo.exceptions;
+package com.example.demo.rest.exceptions;
 
 // inspired by Java Guides
 
