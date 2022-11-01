@@ -1,4 +1,4 @@
-package com.example.demo.rest.service;
+package com.example.demo.rest.model;
 
 // extends class ResourceSupport, which provides method add() for links to other resources
 // add HATEOAS dependency in maven for it
@@ -23,6 +23,19 @@ public class Student
     private String name;
     private String mail;
     private int balance;
+
+    public Student(String name, String mail, int balance) {
+        this.name = name;
+        this.mail = mail;
+        this.balance = balance;
+    }
+
+    public Student(Long id, String name, String mail, int balance) {
+        this.id = id;
+        this.name = name;
+        this.mail = mail;
+        this.balance = balance;
+    }
 
     public Long getId() {
         return id;

@@ -1,15 +1,15 @@
 
-CREATE TABLE students (
-      id int NOT NULL AUTO_INCREMENT,
-      name varchar(20),
-      mail varchar(40),
-      balance int
+CREATE TABLE students(
+    id int NOT NULL AUTO_INCREMENT,
+    student_name varchar(20),
+    mail varchar(40),
+    balance int
 );
 
-CREATE TABLE books (
-  id int NOT NULL AUTO_INCREMENT,
-  title varchar(50),
-  price int
+CREATE TABLE books(
+    id int NOT NULL AUTO_INCREMENT,
+    title varchar(50),
+    price int
 );
 
 

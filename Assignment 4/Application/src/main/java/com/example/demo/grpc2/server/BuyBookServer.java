@@ -12,8 +12,7 @@ public class BuyBookServer {
 
     private static final Logger logger = Logger.getLogger(BuyBookServer.class.getName());
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Builder creates a gRPC server on the specified port and adds the ExamService service that we defined to it
         Server server = ServerBuilder.forPort(9091)
                 .addService(new BuyBookService())

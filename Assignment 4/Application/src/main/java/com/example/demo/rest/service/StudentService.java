@@ -1,6 +1,6 @@
-package com.example.demo.rest.model;
+package com.example.demo.rest.service;
 
-import com.example.demo.rest.service.Student;
+import com.example.demo.rest.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
